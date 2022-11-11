@@ -1,0 +1,25 @@
+<div class ="container">
+<div>
+<h1>Formulario</h1>
+</div>
+<form [formGroup]="formulario">
+
+    <!--Aqui va el formulario-->
+
+</form>
+</div>
+<!--Input para nombre-->
+
+<div class="form-group">
+    <div>
+        <label for="Nombre"></label>
+        <!--Input para campo nombre-->
+        <input
+        type="text"
+        placeholder="Ingresa Tu Nombre"
+        formControlName="nombre"
+        required
+        >
+        <!--Mostrar el error para el campo nombre-->
+        <small
+
