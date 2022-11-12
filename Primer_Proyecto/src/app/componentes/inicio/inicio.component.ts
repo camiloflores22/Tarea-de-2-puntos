@@ -13,9 +13,9 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.formulario = this.fb.group({
-      nombre:["",[Validators.required, Validators.minLength(20)]],
-      apellido:["",[Validators.required, Validators.minLength(20)]],
-      edad:["",[Validators.required, Validators.min(3)]],
+      nombre:["",[Validators.required, Validators.minLength(4)]],
+      apellido:["",[Validators.required, Validators.minLength(4)]],
+      edad:["",[Validators.required, Validators.min(4)]],
       email:["", Validators.required]
 
     });
@@ -24,7 +24,8 @@ export class InicioComponent implements OnInit {
 get formularioReactivo(){
   return this.formulario.controls;
  }
-botonEnviar(){
+ 
+ botonEnviar(){
   console.log(this.formulario);
-}
+  }
 }
